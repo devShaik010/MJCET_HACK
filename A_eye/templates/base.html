@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Include DaisyUI CSS -->
+   
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.20/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        body {
+            --bg-base: #FFFFFF; /* Set background color to white */
+            --bg-base-100: #F9FAFB; /* Set a lighter background color */
+            --text-base: #000000; /* Set text color to black */
+            font-family: 'Poppins', sans-serif;
+            /* Add more customizations for light mode as needed */
+        }
+        /* Custom styles for the background image */
+        .hero-section {
+            background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/12/City-At-Night-Wallpaper-HD-620x388.jpg');
+            background-size: cover;
+            background-position: center;
+            position: fixed;
+            filter: brightness(50%);
+            filter: blur(2px);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Push the background behind other content */
+        }
+
+  
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar nv bg-base-100" style="z-index: 9999;background-color: black;color: white;">
+        <div class="flex-1">
+            <a class="btn btn-ghost  text-2xl">A-eye</a>
+        </div>
+        <div class="flex-none">
+            <ul class="menu menu-horizontal px-1">
+                <li><a>Contact</a></li>
+                <li>
+                    <details>
+                        <summary>
+                            About
+                        </summary>
+                        <ul class="p-2 bg-base-100 rounded-t-none" style="background-color: #000000;color: white;">
+                            <li><a>Traffic Ligts</a></li>
+                            <li><a>About us</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+    <footer class="bg-gray-100 py-4 fixed bottom-0 w-full" style="background-color: black;color: white;">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 A-eye: Smart Traffic Light System. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.tai lwindcss.com"></script>
+</body>
+
+</html>

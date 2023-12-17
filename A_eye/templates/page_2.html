@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2 class="h-2 text-xl text-center mt-5">The total number of Vehicles is : {{count}}</h2>
+
+<div class="flex justify-center items-center h-screen">
+
+  <div class="flex justify-between items-center w-48">
+
+    <!-- Street light -->
+    <h1>{{count}}</h1>
+    <div class="h-2 w-2 rounded-full bg-gray-600 mr-4"></div>
+    <div class="h-24 w-2 bg-gray-600"></div>
+
+    <!-- Traffic lights -->
+    <div class="flex flex-col items-center space-y-4">
+      <!-- Red light -->
+      <div class="h-12 w-12 rounded-full bg-red-500"></div>
+
+      <!-- Yellow light -->
+      <div class="h-12 w-12 rounded-full bg-yellow-500"></div>
+
+      <!-- Green light -->
+      <div class="h-12 w-12 rounded-full bg-green-500"></div>
+    </div>
+  </div>
+</div>
+<!-- <script type="text/javascript">
+    // Reload the page every 2 seconds
+setInterval(function() {
+    location.reload();
+}, 2000); // 2000 milliseconds = 2 seconds
+
+</script> -->
+
+{% endblock %}
