@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A_Eye</title>
     <!-- Include DaisyUI CSS -->
    
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.20/dist/full.min.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="https://raw.githubusercontent.com/devShaik010/img_hosting/main/logo.JPG" type="image/png">
 <script src="https://cdn.tailwindcss.com"></script>
 
 
@@ -22,51 +23,81 @@
         }
         /* Custom styles for the background image */
         .hero-section {
-            background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/12/City-At-Night-Wallpaper-HD-620x388.jpg');
+            background-image: url('https://images.unsplash.com/photo-1483775759867-c331c3a6a721?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
             background-size: cover;
             background-position: center;
             position: fixed;
             filter: brightness(50%);
-            filter: blur(2px);
+            filter: blur(0px);
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             z-index: -1; /* Push the background behind other content */
         }
+        
+/* Add this CSS to your existing stylesheet */
+.nv_bg {
+    background-color: rgba(10, 10, 10, 0); /* Adjust alpha (0.5 is semi-transparent white) */
+    backdrop-filter: blur(0px); /* Adjust blur strength as needed */
+    -webkit-backdrop-filter: blur(5px); /* For Safari */
+    border-radius: 10px; /* Optional: Add border radius for a smoother look */
+    color: white;
+}
 
-  
+/* Example styles for better visibility */
+.btn {
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+    color: white;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+    color: white;
+}
+
+/* Other styles as per your design */
+
+        
 
     </style>
 </head>
 
 <body>
-    <div class="navbar nv bg-base-100" style="z-index: 9999;background-color: black;color: white;">
+    <div class="navbar nv_bg  " style="z-index: 9999;background: blur;">
         <div class="flex-1">
-            <a class="btn btn-ghost  text-2xl">A-eye</a>
+            <a class="btn btn-ghost text-white  text-xl"><i>Trojan Horses</i></a>
         </div>
         <div class="flex-none">
-            <ul class="menu menu-horizontal px-1">
-                <li><a>Contact</a></li>
+            <ul class=" px-1" style="list-style: none;">
+
                 <li>
-                    <details>
-                        <summary>
-                            About
-                        </summary>
-                        <ul class="p-2 bg-base-100 rounded-t-none" style="background-color: #000000;color: white;">
-                            <li><a>Traffic Ligts</a></li>
-                            <li><a>About us</a></li>
-                        </ul>
-                    </details>
+                   
+                            <li><a class="shadow  rounded p-10" href="https://www.canva.com/design/DAF3JNFEakg/7yB9fJpjMLgcNvCW67a8jg/view?utm_content=DAF3JNFEakg&utm_campaign=designshare&utm_medium=link&utm_source=editor">What are AI traffic signals ?</a></li>
+                            <!-- <li><a>About us</a></li> -->
+                   
                 </li>
             </ul>
         </div>
     </div>
     {% block content %}
     {% endblock %}
-    <footer class="bg-gray-100 py-4 fixed bottom-0 w-full" style="background-color: black;color: white;">
+    <footer class="bg-gray-100 py-4 fixed bottom-0 w-full" style="background: transparent;font-size: small;text-shadow: 0px 0px 10px gray;">
         <div class="container mx-auto text-center">
-            <p>&copy; 2023 A-eye: Smart Traffic Light System. All rights reserved.</p>
+            <p>&copy; 2023 Trojan Horsess. All rights reserved.</p>
         </div>
     </footer>
     <script src="https://cdn.tai lwindcss.com"></script>
